@@ -1,5 +1,6 @@
 .default {
     --top-img:url('../images/bg-desktop-dark.jpg');
+    --top-img-mobile:url('../images/bg-mobile-dark.jpg');
     --bg: hsl(235, 21%, 11%);
     --element-bg: hsl(235, 24%, 19%);
     --borderColor:hsl(237, 14%, 26%);
@@ -10,12 +11,13 @@
 
 .light {
     --top-img:url('../images/bg-desktop-light.jpg');
-	--bg: hsl(236, 33%, 92%);
-	--element-bg:hsl(0, 0%, 98%);
+    --top-img-mobile:url('../images/bg-mobile-light.jpg');
+    --bg: hsl(236, 33%, 92%);
+    --element-bg:hsl(0, 0%, 98%);
     --borderColor:hsla(236, 24%, 66%, 0.185);
     --textColor:hsl(235, 24%, 19%);
     --actionText:hsl(234, 11%, 52%);
-	--checkedColor:hsl(234, 11%, 52%);
+    --checkedColor:hsl(234, 11%, 52%);
 }
 
 * {
@@ -251,5 +253,12 @@ body {
 		justify-content: center;
 		border-radius: 5px;
 		background: var(--element-bg);
+	}
+	.app {
+		background: var(--top-img-mobile);
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: 100% 40%;
+		background-color: var(--bg);
 	}
 }
