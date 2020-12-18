@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <script src = "https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body class="default" id="default">
+
+  <div class="app">
+    <div class="container">
+      <div class="header">
+        <h1>TODO</h1>
+        <img id="theme-toggler" src="images/icon-sun.svg">
+      </div>
+      <div class="input">
+        <button class="flat-icon" id="add-task"><i class="fas fa-plus"></i></button>
+        <input id="input-text" type="text" placeholder="Create A new todo...">
+      </div>
+      <div class="tasks">
+        <div class="tasks-container">
+
+        </div>
+        <div class="tasks-actions">
+          <span id="quantity">5 items left</span>
+            <ul>
+              <li onclick="showAll()" data-value="all" class="active">All</li>
+              <li onclick="filterActive()" data-value="active" >Active</li>
+              <li onclick="filterCompleted()" data-value="complete" >Completed</li>
+            </ul>
+            <span onclick="clearCompleted()" id="clear-completed">Clear Completed</span>
+        </div>
+        <span class="tip">Drag and drop to reorder list</span>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>. 
+    Coded by <a href="https://www.facebook.com/lucifer0x446/"> Ahmed Samy</a>.
+  </div>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/themes.js"></script>
+</body>
+</html>
