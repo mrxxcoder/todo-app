@@ -162,6 +162,7 @@ const countCompleted = () => {
 
 
 const clearCompleted = () => {
+    countCompleted();
     document.querySelectorAll(".task").forEach((task) => {
         if(task.querySelector("input").checked) {
             task.remove();
@@ -171,6 +172,7 @@ const clearCompleted = () => {
 
 
 const showAll = () => {
+    countCompleted();
     document.querySelectorAll(".task-action li").forEach((d, i) => {
         if(i === 0){
             d.classList.add("filterActive")
@@ -184,6 +186,7 @@ const showAll = () => {
 }
 
 const filterCompleted = () => {
+    countCompleted();
     document.querySelectorAll(".task-action li").forEach((d, i) => {
         if(i === 2){
             d.classList.add("filterActive")
@@ -200,6 +203,7 @@ const filterCompleted = () => {
 }
 
 const filterActive = (e) => {
+    countCompleted();
     document.querySelectorAll(".task-action li").forEach((d, i) => {
         if(i === 1){
             d.classList.add("filterActive")
