@@ -84,9 +84,13 @@ body {
 	height:22px;
 	width: 22px;
 	border-radius: 50%;
+	-webkit-background-image:transparent;
+	-ms-background-image:transparent;
 	background-image:transparent;
 	border: none;
 	outline: none;
+	-webkit-appearance: none;
+	-ms-progress-appearance: none;
 	appearance: none;
 	margin-right: 20px;
 	cursor: pointer;
@@ -160,8 +164,8 @@ body {
 
 .flat-icon.check {
 	background: linear-gradient(90deg,hsl(192,100%,67%) 0%, hsl(280,87%,65%) 80%);
-	background: -webkit-linear-gradient(90deg,hsl(192,100%,67%) 0%, hsl(280,87%,65%) 80%);
-	background: -moz-linear-gradient(90deg,hsl(192,100%,67%) 0%, hsl(280,87%,65%) 80%);
+	-webkit-background: -webkit-linear-gradient(90deg,hsl(192,100%,67%) 0%, hsl(280,87%,65%) 80%);
+	-moz-background: -moz-linear-gradient(90deg,hsl(192,100%,67%) 0%, hsl(280,87%,65%) 80%);
 	transition: all 0.9s;
 }
 
